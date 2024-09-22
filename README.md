@@ -1,8 +1,8 @@
-KELOMPOK C - Factory Pattern
-# Irfan Maulana Manaf 
-# Melisa Novpriyanti
-# Danang Wahyu
-# Imam Baihaqqi
-# Rizky Dhafin
-# Raditya Wisnu C N
-# Femas Arianda R
+#KELOMPOK C - Factory Pattern
+1. Irfan Maulana Manaf 
+2. Melisa Novpriyanti
+3. Danang Wahyu
+4. Imam Baihaqqi
+5. Rizky Dhafin
+6. Raditya Wisnu C N
+7. Femas Arianda R
