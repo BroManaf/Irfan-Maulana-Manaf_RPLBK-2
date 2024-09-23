@@ -15,39 +15,22 @@ MASALAH :
 
 '''
 
-class Shape:
-    def draw(self):
-        raise NotImplementedError("Subclass must implement abstract method")
-
-class Circle(Shape):
+# Produk spesifik
+class Circle:
     def draw(self):
         print("Drawing a Circle")
 
-class Square(Shape):
+class Square:
     def draw(self):
         print("Drawing a Square")
 
-# Factory untuk membuat objek
-class ShapeFactory:
-    @staticmethod
-    def get_shape(shape_type):
-        if shape_type == "Circle":
-            return Circle()
-        elif shape_type == "Square":
-            return Square()
-        else:
-            return None
-
-'''
-kode klien dibawah adalah bagian yang meminta objek dari factory untuk digunakan dalam aplikasi, 
-tanpa harus mengetahui detail implementasi dari objek yang dibuat.
-
-'''
+# Kode Klien
 if __name__ == "__main__":
     shape_type = "Circle"
     
-    shape = ShapeFactory.get_shape(shape_type)
-    if shape:
-        shape.draw()
-    else:
-        print("Invalid shape type")
+    if shape_type == "Circle":
+        shape = Circle()
+    elif shape_type == "Square":
+        shape = Square()
+    
+    shape.draw()
